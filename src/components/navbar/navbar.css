@@ -1,0 +1,128 @@
+.gt3-navbar{
+    position: sticky;
+}
+.gt3-navbar-links{
+    justify-content: space-between;  
+   display: flex;
+   padding: 10px 15px;
+
+}
+
+
+.gt3-navbar-links img{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    justify-content: flex-start;
+
+    
+} 
+
+.gt3-navbar-links-container{
+    display: flex;
+    
+}
+
+.gt3-navbar-links-container a{
+    color:white;
+    margin-right: 30px;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+
+ .gt3-navbar-sign{
+    display: flex;
+    color: white;
+    line-height:40px;
+    justify-content: flex-end;
+}
+.gt3-navbar-sign p{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+
+.gt3-navbar-links-container-btn{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: flex-end;
+    margin-top: 8px;
+     
+}
+
+.gt3-navbar-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+.gt3-navbar-menu svg{
+    cursor: pointer;
+}
+.gt3-navbar-menu-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.gt3-navbar-menu-container p{
+    margin: 1rem 0;
+}
+
+.gt3-navbar-menu-container-links-sign{
+    display: none;
+}
+
+@media screen and (max-width:1050px) {
+   .gt3-navbar-links-container{
+       display: none;
+   }
+   .gt3-navbar-menu{
+       display: flex;
+   }
+}
+
+@media screen and (max-width:700px) {
+    .gt3-navbar{
+        padding: 2rem 4rem;
+    }
+   
+ }
+
+ @media screen and (max-width:550px) {
+    .gt3-navbar{
+        padding: 2rem;
+    }
+   .gt3-navbar-sign{
+       display: none;
+   }
+   .gt3-navbar-menu-container{
+       top: 20px;
+   }
+   .gt3-navbar-menu-container-links-sign{
+       display: block;
+   }
+ }
